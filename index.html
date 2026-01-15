@@ -1,291 +1,1450 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sandeep Sain | Service Delivery & Technical Support Lead</title>
+  <meta charset="UTF-8" />
+  <title>Sandeep Sain | Service Delivery & VoIP Lead</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Service Delivery Lead & German Language Expert with 16+ years in VoIP, PBX, SIP, Cloud Telephony and ITIL-based service operations for DACH region." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #050816;
+      --bg-card: rgba(15, 23, 42, 0.85);
+      --accent: #00e0ff;
+      --accent-soft: rgba(0, 224, 255, 0.18);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-subtle: rgba(148, 163, 184, 0.25);
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.85);
+      --radius-xl: 24px;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    * {
+      box-sizing: border-box;
+    }
 
-<style>
-:root{
-  --bg:#020617;
-  --card:rgba(255,255,255,0.08);
-  --accent:#38bdf8;
-  --text:#e5e7eb;
-  --muted:#94a3b8;
-}
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{
-  background:linear-gradient(135deg,#020617,#020617);
-  color:var(--text);
-  scroll-behavior:smooth;
-}
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0b1220 0, #020617 45%, #020617 100%);
+      color: var(--text-main);
+      overflow-x: hidden;
+    }
 
-/* NAV */
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(2,6,23,0.92);
-  backdrop-filter:blur(12px);
-  padding:15px 10%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:1000;
-}
-nav .logo{color:var(--accent);font-weight:600}
-nav ul{list-style:none;display:flex;gap:22px}
-nav ul li a{
-  color:var(--text);
-  text-decoration:none;
-  font-size:0.9rem;
-}
-nav ul li a:hover{color:var(--accent)}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-/* SECTIONS */
-section{padding:120px 10%}
-h2{
-  font-size:2.3rem;
-  text-align:center;
-  margin-bottom:45px;
-  color:var(--accent);
-}
+    /* Top navbar */
+    .top-navbar-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(to right, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.94));
+      border-bottom: 1px solid rgba(55, 65, 81, 0.9);
+    }
 
-/* HERO */
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:60px;
-}
-.hero-text h1{font-size:3.4rem}
-.hero-text span{color:var(--accent)}
-.hero-text p{margin-top:10px;color:var(--muted)}
-.hero-info{
-  margin-top:25px;
-  font-size:0.95rem;
-  color:var(--muted);
-}
-.hero-photo img{
-  width:280px;
-  height:280px;
-  object-fit:cover;
-  border-radius:50%;
-  border:4px solid rgba(56,189,248,0.4);
-  box-shadow:0 0 45px rgba(56,189,248,0.35);
-}
+    .top-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 18px;
+      max-width: 1440px;
+      margin: 0 auto;
+      gap: 12px;
+    }
 
-/* CARD */
-.card{
-  background:var(--card);
-  border-radius:18px;
-  padding:36px;
-  margin-bottom:30px;
-  box-shadow:0 0 30px rgba(0,0,0,0.45);
-  transition:.4s;
-}
-.card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 0 40px rgba(56,189,248,0.3);
-}
+    .top-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-/* EXPERIENCE */
-.timeline{display:grid;gap:34px}
-.timeline h3{color:#fff}
-.timeline small{color:var(--muted)}
+    .top-nav-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: conic-gradient(from 210deg, #22d3ee, #a855f7, #22c55e, #22d3ee);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
 
-/* SKILLS */
-.skills{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
-}
-.skill{
-  background:var(--card);
-  padding:24px;
-  border-radius:16px;
-  transition:.4s;
-}
-.skill:hover{
-  background:rgba(56,189,248,0.12);
-  transform:scale(1.03);
-}
+    .top-nav-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
 
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:40px;
-  background:#020617;
-  font-size:.85rem;
-  color:var(--muted);
-}
-</style>
+    .top-nav-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .top-nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      font-size: 0.8rem;
+    }
+
+    .top-nav-tab {
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.16s ease-out;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .top-nav-tab i {
+      font-size: 0.9rem;
+      color: var(--accent);
+    }
+
+    .top-nav-tab.active,
+    .top-nav-tab:hover {
+      border-color: rgba(148, 163, 184, 0.9);
+      color: #e5e7eb;
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), rgba(15, 23, 42, 0.96));
+    }
+
+    .top-nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      padding: 5px 11px;
+      border-radius: 999px;
+      border: 1px solid rgba(56, 189, 248, 0.8);
+      color: #e0f2fe;
+      background: radial-gradient(circle at top left, rgba(8, 47, 73, 0.9), rgba(15, 23, 42, 0.98));
+      box-shadow: 0 10px 26px rgba(8, 47, 73, 0.9);
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .top-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+      }
+      .top-nav-tabs {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .top-nav-cta {
+        align-self: flex-start;
+      }
+    }
+
+    /* Layout */
+    .dashboard-layout {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      min-height: calc(100vh - 54px);
+      gap: 18px;
+      padding: 18px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 992px) {
+      .dashboard-layout {
+        grid-template-columns: 1fr;
+        padding: 14px 12px 18px;
+      }
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.94), rgba(15, 23, 42, 0.98));
+      border-radius: 26px;
+      border: 1px solid rgba(75, 85, 99, 0.7);
+      box-shadow: var(--shadow-soft);
+      padding: 20px 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      position: sticky;
+      top: 80px;
+      max-height: calc(100vh - 110px);
+    }
+
+    @media (max-width: 992px) {
+      .sidebar {
+        position: static;
+        max-height: none;
+      }
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .brand-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand-badge {
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--text-muted);
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 60%);
+    }
+
+    .profile-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .avatar-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar-ring {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: conic-gradient(from 210deg, #22d3ee, #a855f7, #22c55e, #22d3ee);
+      padding: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: radial-gradient(circle at 30% 20%, #1e293b, #020617);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .profile-role {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .location-row {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: radial-gradient(circle at top left, rgba(8, 47, 73, 0.55), rgba(15, 23, 42, 0.95));
+      font-size: 0.76rem;
+      color: var(--text-muted);
+    }
+
+    .chip i {
+      font-size: 0.9rem;
+      color: var(--accent);
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      word-break: break-all;
+    }
+
+    .contact-item i {
+      color: #38bdf8;
+      font-size: 0.9rem;
+      margin-top: 3px;
+    }
+
+    .sidebar-section-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+
+    .lang-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 0.75rem;
+    }
+
+    .lang-pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    .nav-link-item {
+      padding: 7px 10px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.18s ease-out;
+    }
+
+    .nav-link-item:hover,
+    .nav-link-item.active {
+      color: #e5e7eb;
+      border-color: rgba(148, 163, 184, 0.7);
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), rgba(15, 23, 42, 0.96));
+    }
+
+    .nav-link-item i {
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    .sidebar-footer {
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    /* Main content */
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .hero {
+      border-radius: 26px;
+      padding: 18px 20px 16px;
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.1), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.18), transparent 55%),
+        rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      box-shadow: var(--shadow-soft);
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(260px, 1.6fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 992px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hero-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-kpi-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .kpi-card {
+      padding: 10px 11px;
+      border-radius: 18px;
+      background: rgba(15, 23, 42, 0.96);
+      border: 1px solid rgba(75, 85, 99, 0.85);
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.85);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .kpi-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .kpi-value {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .kpi-sub {
+      font-size: 0.75rem;
+      color: #6ee7b7;
+      margin-top: 0;
+    }
+
+    .kpi-chip {
+      position: absolute;
+      bottom: 6px;
+      right: 8px;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 999px;
+      padding: 3px 8px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+    }
+
+    .hero-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-pill {
+      font-size: 0.72rem;
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(56, 189, 248, 0.7);
+      color: #67e8f9;
+      background: rgba(8, 47, 73, 0.7);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .hero-pill i {
+      font-size: 0.85rem;
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 5px;
+      max-width: 650px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .hero-tag {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(75, 85, 99, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text-muted);
+    }
+
+    .primary-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .btn-primary-neo {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(56, 189, 248, 0.85);
+      background: radial-gradient(circle at top left, rgba(8, 47, 73, 0.9), rgba(15, 23, 42, 0.98));
+      color: #e0f2fe;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 12px 30px rgba(8, 47, 73, 0.95);
+      cursor: pointer;
+      transition: all 0.18s ease-out;
+    }
+
+    .btn-primary-neo:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(8, 47, 73, 1);
+    }
+
+    .btn-ghost-neo {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(15, 23, 42, 0.88);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: all 0.18s ease-out;
+    }
+
+    .btn-ghost-neo:hover {
+      border-color: rgba(148, 163, 184, 1);
+      color: #e5e7eb;
+    }
+
+    .hero-cta-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .hero-right-card {
+      border-radius: 22px;
+      padding: 14px 14px 12px;
+      background:
+        radial-gradient(circle at top, rgba(56, 189, 248, 0.16), transparent 55%),
+        rgba(15, 23, 42, 0.94);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.95);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-right-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-right-header span strong {
+      color: #e5e7eb;
+    }
+
+    .timeline-mini {
+      margin-top: 1px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 8px;
+      align-items: start;
+      font-size: 0.78rem;
+      padding: 6px 0;
+    }
+
+    .timeline-dot-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1px;
+    }
+
+    .timeline-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+    }
+
+    .timeline-line {
+      flex: 1;
+      width: 1px;
+      background: linear-gradient(to bottom, rgba(75, 85, 99, 0.4), transparent);
+      margin-top: 2px;
+    }
+
+    .timeline-role {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .timeline-org {
+      color: var(--text-muted);
+    }
+
+    .timeline-date {
+      font-size: 0.72rem;
+      color: #9ca3af;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .hero-stats-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .hero-stats-footer span strong {
+      color: #e5e7eb;
+    }
+
+    .badge-soft {
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(15, 118, 110, 0.4);
+      color: #a7f3d0;
+      border: 1px solid rgba(34, 197, 94, 0.65);
+    }
+
+    /* Sections */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    @media (max-width: 992px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      border-radius: var(--radius-xl);
+      background: rgba(15, 23, 42, 0.96);
+      border: 1px solid rgba(75, 85, 99, 0.85);
+      box-shadow: var(--shadow-soft);
+      padding: 16px 16px 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #9ca3af;
+    }
+
+    .card-badge {
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: var(--text-muted);
+    }
+
+    .summary-text {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .summary-highlight {
+      color: #e5e7eb;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+      font-size: 0.78rem;
+    }
+
+    .tag-pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(75, 85, 99, 0.85);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text-muted);
+    }
+
+    .timeline {
+      margin-top: 4px;
+      border-left: 1px solid rgba(55, 65, 81, 0.9);
+      padding-left: 12px;
+    }
+
+    .timeline-entry {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .timeline-entry::before {
+      content: "";
+      position: absolute;
+      left: -13px;
+      top: 3px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #38bdf8;
+      box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
+    }
+
+    .timeline-entry h4 {
+      font-size: 0.88rem;
+      margin: 0;
+      color: #e5e7eb;
+    }
+
+    .timeline-entry .org {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .timeline-entry .meta {
+      font-size: 0.76rem;
+      color: #9ca3af;
+    }
+
+    .timeline-entry ul {
+      padding-left: 16px;
+      margin: 4px 0 0;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .timeline-entry ul li {
+      margin-bottom: 3px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 576px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .skills-col-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9ca3af;
+      margin-bottom: 3px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      font-size: 0.78rem;
+    }
+
+    .skill-pill {
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text-muted);
+    }
+
+    .cert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.8);
+      background: rgba(15, 23, 42, 0.92);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin: 2px 4px 2px 0;
+    }
+
+    .cert-badge i {
+      color: #fbbf24;
+    }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.1fr);
+      gap: 18px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 992px) {
+      .bottom-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      padding: 6px 8px;
+      border-radius: 14px;
+      background: rgba(15, 23, 42, 0.96);
+      border: 1px dashed rgba(55, 65, 81, 0.9);
+      margin-bottom: 6px;
+    }
+
+    .metric-label {
+      color: var(--text-muted);
+    }
+
+    .metric-value {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    .metric-tag {
+      font-size: 0.7rem;
+      padding: 2px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: var(--text-muted);
+    }
+
+    .footer-note {
+      font-size: 0.72rem;
+      color: #6b7280;
+      text-align: right;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="logo">Sandeep Sain</div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#profile">Profile</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#certifications">Training & Certifications</a></li>
-    <li><a href="#languages">Languages</a></li>
-  </ul>
-</nav>
-
-<!-- HOME / HERO -->
-<section class="hero" id="home">
-  <div class="hero-text">
-    <h1>Sandeep <span>Sain</span></h1>
-    <p>German Language | Service Delivery & Technical Support Lead | GenAI Automation</p>
-    <div class="hero-info">
-      📍 Sri Ganganagar, Rajasthan, India<br>
-      📧 sandeep.sain1989@gmail.com<br>
-      📱 +91 7899425623<br>
-      💼 Microsoft Teams: <b>SANDEEP SAIN</b><br>
-      🔗 <a href="https://www.linkedin.com/in/sandeep-sain-1a972b55/" target="_blank" style="color:#38bdf8">LinkedIn Profile</a>
+<!-- Top navbar with tabs -->
+<div class="top-navbar-wrapper">
+  <div class="top-navbar">
+    <div class="top-nav-left">
+      <div class="top-nav-logo">SS</div>
+      <div>
+        <div class="top-nav-title">Sandeep Sain</div>
+        <div class="top-nav-sub">Service Delivery Lead • VoIP • DACH</div>
+      </div>
     </div>
+
+    <div class="top-nav-tabs">
+      <a href="#overview" class="top-nav-tab active" data-tab="overview">
+        <i class="bi bi-speedometer2"></i> Overview
+      </a>
+      <a href="#experience" class="top-nav-tab" data-tab="experience">
+        <i class="bi bi-diagram-3"></i> Experience
+      </a>
+      <a href="#skills" class="top-nav-tab" data-tab="skills">
+        <i class="bi bi-cpu"></i> Skills
+      </a>
+      <a href="#certs" class="top-nav-tab" data-tab="certs">
+        <i class="bi bi-mortarboard"></i> Education
+      </a>
+      <a href="#genai" class="top-nav-tab" data-tab="genai">
+        <i class="bi bi-magic"></i> Gen-AI
+      </a>
+      <a href="#contact" class="top-nav-tab" data-tab="contact">
+        <i class="bi bi-person-lines-fill"></i> Contact
+      </a>
+    </div>
+
+    <a href="mailto:sandeep.sain1989@gmail.com" class="top-nav-cta">
+      <i class="bi bi-send-fill"></i>
+      Hire / Connect
+    </a>
   </div>
-  <div class="hero-photo">
-    <img src="./professional_Photo.png" alt="Sandeep Sain">
-  </div>
-</section>
-
-<!-- PROFILE -->
-<section id="profile">
-<h2>Profile</h2>
-<div class="card">
-Service Delivery Lead with 16+ years of experience delivering end-to-end IT services, managing SLAs, leading technical teams, resolving
-escalations, and supporting German-speaking enterprise customers across Europe. German Language Expert with extensive experience
-in Level-3 Technical Support for Mitel enterprise telephony solutions. Specialized in PBX systems, VoIP, SIP networking,
-IP/analog/digital phones, DECT, DNS, virtualization, and cloud integrations for German, Austrian, and Swiss customers. Proven expertise
-in MiVoice Office 400 controllers (415, 430, 470, SMBC, Virtual Appliance, SIP DECT, Hospitality, free seating users, OIP call centre
-solution, WebRTC, Mitel Cloudlink Gateway solutions, and managing license server) MiVoice Business -> MIVB Micollab & MBG
-products, and Mitel cloud solutions including CloudLink gateway and Mitel one mobile applications.
-
-CORE COMPETENCIES :- Service Delivery Management • SLA Compliance • KPI Management • ITIL Framework • German-language
-Support • Client Relationship Management • Cloud Support • Leadership & Mentoring • Escalation Management • Service Delivery
-Processes • Continuous Improvement • Customer-Centric Approach • Problem Solving • Incident/Problem/Change Management •
-Service Quality Improvement • Root Cause Analysis • Stakeholder Management • Service Performance Metrics trackers • GEN-AI
-expertise using LLM models with AI-Agents• Feedback Collection • PBX • VOIP • SIP • Cloud Telephony
-  
-</div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-<h2>Professional Experience</h2>
-<div class="timeline">
-
-<div class="card">
-<h3>Mitel Communications Private Limited, Bangalore Karnataka</h3>
-<small>Senior Member of Technical Staff – Voice | Service Delivery-DACH region German Language Expert | 2016 – 2025</small>
-<p>
-Managed end-to-end IT service delivery for PBX/VOIP/SIP/Cloud Telephony systems, ensuring 100% SLA compliance and full
-alignment with ITIL best practices. Provided tailored support to German-speaking enterprise customers, improving customer
-satisfaction scores.
-Trained in VoIP/SIP and PBX technologies by Mitel Switzerland (Solothurn) on deputation, with hands-on experience in process
-transition, account management (asset & access), ticket management, and enterprise support. Strong diagnostic skills using tools
-like Wireshark, PuTTY, IBTShark, WinSCP, FileZilla, FTP and SIP trace analysis. Built and managed a personal Mitel lab with call
-center agent setup. Certified across networking, VoIP, Mitel platforms, Linux (MSL), and IP/SIP DECT voice & data technologies.
-Supporting R&D with defects and virtual sip trunk created on labs, raising defects to provide end to end partners solutions
-handling Level 4 support.
-Provided Level-3 technical support for Mitel PBX controllers, virtual appliances, Server-Manager, SIP, IP DECT and Cloud Telephony platforms. Led service delivery, handled critical escalations,
-performed RCA, supported international process transitions (Switzerland- Solothurn) and European client engagements, and enabled continuous service improvement.
-</p>
 </div>
 
-<div class="card">
-<h3>Microland Limited, Bangalore Karnataka</h3>
-<small>Senior Team Lead – Voice | Service Delivery-DACH region German Language Expert | 2015 – 2016</small>
-<p>
-Managed German enterprise client communications, handled access and router-related issues,
-governed SLA compliance, asset management and ticketing using BMC Remedy. Delivered IT services for German infrastructure clients with strict SLA and KPI compliance across router, access, and infrastructure tickets. Improved first-response time by 18% through process optimization and service governance. Managed escalations, reporting, and client feedback while ensuring customer-centric, best-practice-driven service delivery.
-</p>
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="contact">
+    <div class="brand">
+      <div class="brand-title">Sandeep Sain</div>
+      <div class="brand-badge">Service Delivery Lead</div>
+    </div>
+
+    <div class="profile-card">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <!-- Put your image in same folder as index.html and update extension if needed -->
+            <img src="./professional_Photo.jpg" alt="Professional photo of Sandeep Sain" />
+          </div>
+        </div>
+        <div>
+          <div class="profile-name">Sandeep Sain</div>
+          <div class="profile-role">VoIP & Service Delivery | DACH</div>
+        </div>
+      </div>
+
+      <div class="location-row mt-2">
+        <i class="bi bi-geo-alt-fill"></i>
+        <span>House No 1037, Sri Ganganagar, Rajasthan, India 335001</span>
+      </div>
+
+      <div class="d-flex flex-wrap gap-2 mt-2">
+        <div class="chip">
+          <i class="bi bi-translate"></i>
+          <span>German (B2.2) • English • Hindi</span>
+        </div>
+        <div class="chip">
+          <i class="bi bi-globe2"></i>
+          <span>DACH | Europe Support</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sidebar-section-title mt-2">Contact</div>
+      <div class="contact-list">
+        <div class="contact-item">
+          <i class="bi bi-envelope-fill"></i>
+          <div>
+            <div><a href="mailto:sandeep.sain1989@gmail.com">sandeep.sain1989@gmail.com</a></div>
+            <div><a href="mailto:connect.siphonicspace@outlook.com">connect.siphonicspace@outlook.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="bi bi-telephone-fill"></i>
+          <div><a href="tel:+917899425623">+91 78994 25623</a></div>
+        </div>
+        <div class="contact-item">
+          <i class="bi bi-link-45deg"></i>
+          <div>
+            <a href="https://sandeepsain1989-debug.github.io/portfolio/#home" target="_blank" rel="noreferrer">
+              Portfolio Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sidebar-section-title mt-2">Languages</div>
+      <div class="lang-badges">
+        <span class="lang-pill">German – B2.2 (Max Mueller Bhavan)</span>
+        <span class="lang-pill">English – Fluent</span>
+        <span class="lang-pill">Hindi – Native</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="sidebar-section-title mt-2">Navigate</div>
+      <div class="nav-links">
+        <a href="#overview" class="nav-link-item active"><i class="bi bi-speedometer2"></i> Overview</a>
+        <a href="#experience" class="nav-link-item"><i class="bi bi-diagram-3"></i> Experience</a>
+        <a href="#skills" class="nav-link-item"><i class="bi bi-cpu"></i> Skills</a>
+        <a href="#certs" class="nav-link-item"><i class="bi bi-mortarboard"></i> Education & Certifications</a>
+        <a href="#genai" class="nav-link-item"><i class="bi bi-magic"></i> Gen-AI & Automation</a>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      Open to leadership roles in Service Delivery, VoIP/SIP, Cloud Telephony & Gen-AI driven operations for global DACH clients.
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero / Overview -->
+    <section id="overview" class="hero">
+      <div>
+        <div class="hero-title">
+          Service Delivery & VoIP Leader
+          <span class="hero-pill">
+            <i class="bi bi-patch-check-fill"></i>
+            16+ yrs | DACH
+          </span>
+        </div>
+        <p class="hero-subtitle">
+          Service Delivery Lead and German Language Expert specializing in PBX, VoIP, SIP networking, and Cloud Telephony for enterprise DACH customers, delivering ITIL-driven, SLA-focused support and escalation management.
+        </p>
+
+        <div class="hero-tags">
+          <span class="hero-tag">Service Delivery Management</span>
+          <span class="hero-tag">DACH Region (German)</span>
+          <span class="hero-tag">PBX • VoIP • SIP</span>
+          <span class="hero-tag">Mitel MiVoice Office 400</span>
+          <span class="hero-tag">MiVoice Business • MiCollab • MBG</span>
+          <span class="hero-tag">CloudLink • Mitel One</span>
+          <span class="hero-tag">ITIL & PRINCE2</span>
+          <span class="hero-tag">Gen-AI Automation</span>
+          <span class="hero-tag">Incident / Problem / Change</span>
+        </div>
+
+        <div class="primary-actions">
+          <a href="mailto:sandeep.sain1989@gmail.com" class="btn-primary-neo">
+            <i class="bi bi-send-fill"></i>
+            Request Profile / Connect
+          </a>
+          <a href="#experience" class="btn-ghost-neo">
+            <i class="bi bi-briefcase-fill"></i>
+            View Experience Timeline
+          </a>
+        </div>
+        <div class="hero-cta-note">
+          Available for senior Service Delivery, VoIP Network Lead, and Gen-AI enabled operations roles across India & Europe.
+        </div>
+
+        <div class="hero-kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">Experience</div>
+            <div class="kpi-value">16+ yrs</div>
+            <div class="kpi-sub">End-to-end IT & Telecom</div>
+            <div class="kpi-chip">ITIL • PRINCE2</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Regions</div>
+            <div class="kpi-value">DACH</div>
+            <div class="kpi-sub">Germany • Austria • Switzerland</div>
+            <div class="kpi-chip">German B2.2</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Tech Focus</div>
+            <div class="kpi-value">PBX / VoIP</div>
+            <div class="kpi-sub">Mitel • HiPath • SIP</div>
+            <div class="kpi-chip">L3 / L4 Support</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Service</div>
+            <div class="kpi-value">100% SLA</div>
+            <div class="kpi-sub">ITIL-driven delivery</div>
+            <div class="kpi-chip">Escalation Mgmt</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right-card">
+        <div class="hero-right-header">
+          <span><strong>Career Snapshot</strong></span>
+          <span>2009 → 2025</span>
+        </div>
+        <div class="timeline-mini">
+          <div class="timeline-item">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div>
+              <div class="timeline-role">Senior Member Technical Staff – Service Delivery</div>
+              <div class="timeline-org">Mitel Communications Pvt. Ltd – Bangalore</div>
+            </div>
+            <div class="timeline-date">Sep 2016 – Aug 2025</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div>
+              <div class="timeline-role">Senior Team Lead – Service Delivery</div>
+              <div class="timeline-org">Microland Ltd (Mercedes Benz) – Bangalore</div>
+            </div>
+            <div class="timeline-date">Feb 2015 – Sep 2016</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div>
+              <div class="timeline-role">German Tech Support Lead</div>
+              <div class="timeline-org">Sonim Technologies India – Bangalore</div>
+            </div>
+            <div class="timeline-date">May 2013 – Feb 2015</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div>
+              <div class="timeline-role">German IT Support – PBX & VoIP</div>
+              <div class="timeline-org">Atos India – Kolkata</div>
+            </div>
+            <div class="timeline-date">Jun 2012 – May 2013</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div>
+              <div class="timeline-role">German Client Support & Ops</div>
+              <div class="timeline-org">Genpact India – Bangalore</div>
+            </div>
+            <div class="timeline-date">Oct 2010 – Mar 2012</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot-wrap">
+              <div class="timeline-dot"></div>
+            </div>
+            <div>
+              <div class="timeline-role">German Language Analyst</div>
+              <div class="timeline-org">TCS – Vadodara</div>
+            </div>
+            <div class="timeline-date">Apr 2009 – Oct 2010</div>
+          </div>
+        </div>
+
+        <div class="hero-stats-footer">
+          <span>Visited & supported onsite in <strong>Germany, Switzerland & Hungary</strong>.</span>
+          <span class="badge-soft">Enterprise PBX • VoIP • Cloud Telephony</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary & Strengths -->
+    <section class="grid-2">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Professional Summary</div>
+          <div class="card-badge">Service • VoIP • DACH</div>
+        </div>
+        <p class="summary-text">
+          Service Delivery Lead with <span class="summary-highlight">16+ years</span> experience managing end-to-end IT services, leading technical teams, and resolving critical escalations for German-speaking enterprise customers across Europe.
+        </p>
+        <p class="summary-text">
+          Specialized in <span class="summary-highlight">PBX systems, VoIP, SIP networking, DECT, DNS, virtualization, and cloud telephony</span> with deep hands-on expertise on Mitel MiVoice Office 400 controllers (415, 430, 470, SMBC, Virtual Appliance, SIP DECT, Hospitality, free seating users, OIP call centre, WebRTC, and CloudLink Gateway with license server management).
+        </p>
+        <p class="summary-text">
+          Proven experience in <span class="summary-highlight">MiVoice Business, MiCollab, MBG</span> and Mitel cloud solutions, delivering ITIL-compliant services, root cause analysis, and continuous service improvement for demanding SLAs in the DACH region.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Core Strengths</div>
+          <div class="card-badge">Delivery & Governance</div>
+        </div>
+        <div class="tag-cloud">
+          <span class="tag-pill">Service Delivery Management</span>
+          <span class="tag-pill">SLA & KPI Governance</span>
+          <span class="tag-pill">ITIL Framework</span>
+          <span class="tag-pill">Escalation Management</span>
+          <span class="tag-pill">Client Relationship Management</span>
+          <span class="tag-pill">Stakeholder Management</span>
+          <span class="tag-pill">Incident / Problem / Change</span>
+          <span class="tag-pill">Root Cause Analysis</span>
+          <span class="tag-pill">Service Quality Improvement</span>
+          <span class="tag-pill">Service Performance Metrics</span>
+          <span class="tag-pill">Leadership & Mentoring</span>
+          <span class="tag-pill">German-language Support (DACH)</span>
+          <span class="tag-pill">Cloud Support & Telephony</span>
+          <span class="tag-pill">Gen-AI with LLM & Agents</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience timeline -->
+    <section id="experience" class="card">
+      <div class="card-header">
+        <div class="card-title">Experience Timeline</div>
+        <div class="card-badge">2009 – 2025</div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-entry">
+          <h4>Senior Member Technical Staff – Service Delivery (DACH) | German Language Expert</h4>
+          <div class="org">Mitel Communications Private Limited – Bangalore, Karnataka</div>
+          <div class="meta">Sep 22, 2016 – Aug 07, 2025</div>
+          <ul>
+            <li>Managed end-to-end IT service delivery for PBX / VoIP / SIP / Cloud Telephony, ensuring 100% SLA alignment with ITIL best practices for German-speaking enterprise customers.</li>
+            <li>Trained in VoIP/SIP and PBX by Mitel Switzerland (Solothurn) with direct involvement in process transition, account (asset & access) and enterprise ticket management.</li>
+            <li>Used Wireshark, PuTTY, IBTShark, WinSCP, FileZilla, FTP and deep SIP trace analysis for Level‑3 and Level‑4 diagnostics, including personal Mitel lab & call centre agent setup.</li>
+            <li>Supported R&D with virtual SIP trunks and defect analysis, raising issues to deliver end-to-end partner solutions across MiVoice Office 400, MiVoice Business, MiCollab, MBG, CloudLink, and Mitel One.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <h4>Senior Team Lead – Service Delivery (DACH) | German Language Expert</h4>
+          <div class="org">Microland Limited (Mercedes Benz) – Bangalore, Karnataka</div>
+          <div class="meta">Feb 19, 2015 – Sep 20, 2016</div>
+          <ul>
+            <li>Delivered IT services for German infrastructure clients across router, access and infra tickets with strict SLA & KPI adherence.</li>
+            <li>Improved first-response time by 18% through process optimisation and stronger service governance.</li>
+            <li>Led customer escalations, service reporting and feedback sessions, fostering a customer‑centric delivery culture.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <h4>German Language Technical Support Lead – BPO Ops, Sales Order & Warehouse Shipment (DACH)</h4>
+          <div class="org">Sonim Technologies India Pvt Ltd – Bangalore, Karnataka</div>
+          <div class="meta">May 22, 2013 – Feb 18, 2015</div>
+          <ul>
+            <li>Delivered IT & telecom support for German-speaking customers with SLA-driven, customer-focused service delivery.</li>
+            <li>Performed trend analysis on recurring issues and worked with engineering to reduce defect incidents by 18%.</li>
+            <li>Handled escalations for rugged devices and network setups, increasing satisfaction and support efficiency.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <h4>German Language IT Support – PBX & VoIP (HiPath 3000 IP Telephony)</h4>
+          <div class="org">Atos India Pvt Ltd – Kolkata, West Bengal</div>
+          <div class="meta">Jun 07, 2012 – May 21, 2013</div>
+          <ul>
+            <li>Supported Siemens HiPath 3000 PBX and VoIP infrastructure, ensuring SLA-compliant incident closure.</li>
+            <li>Improved ticket turnaround through knowledge-base utilisation and proactive monitoring.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <h4>German Client Support & Service Operations (Market Research – DACH)</h4>
+          <div class="org">Genpact India Pvt Ltd – Bangalore, Karnataka</div>
+          <div class="meta">Oct 18, 2010 – Mar 30, 2012</div>
+          <ul>
+            <li>Delivered German-language support for reporting, change requests, and client deliverables.</li>
+            <li>Ensured timely communication and contributed to service quality improvement across teams.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <h4>German Language Analyst – Process Support (Market Research Database Coding – IMDB, DACH)</h4>
+          <div class="org">Tata Consultancy Services (TCS) – Vadodara, Gujarat</div>
+          <div class="meta">Apr 06, 2009 – Oct 08, 2010</div>
+          <ul>
+            <li>Handled German documentation, client communication and process transition from Germany & Hungary.</li>
+            <li>Maintained adherence to SLAs and process quality standards.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technology -->
+    <section id="skills" class="card">
+      <div class="card-header">
+        <div class="card-title">Technical & Delivery Skills</div>
+        <div class="card-badge">PBX • VoIP • Cloud</div>
+      </div>
+
+      <div class="skills-grid">
+        <div>
+          <div class="skills-col-title">Telephony & Networking</div>
+          <div class="skill-list">
+            <span class="skill-pill">PBX – Mitel, HiPath</span>
+            <span class="skill-pill">VoIP • SIP</span>
+            <span class="skill-pill">Cloud Telephony</span>
+            <span class="skill-pill">IP / Analog / Digital Phones</span>
+            <span class="skill-pill">DECT • IP/SIP DECT</span>
+            <span class="skill-pill">DNS • Network Admin Lab</span>
+            <span class="skill-pill">Virtual Appliances</span>
+            <span class="skill-pill">CloudLink Gateway</span>
+            <span class="skill-pill">Mitel One Mobile</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skills-col-title">Service & Tooling</div>
+          <div class="skill-list">
+            <span class="skill-pill">BMC Remedy (Ticketing)</span>
+            <span class="skill-pill">Service Reporting & Dashboards</span>
+            <span class="skill-pill">RCA Authoring</span>
+            <span class="skill-pill">Knowledge Base Management</span>
+            <span class="skill-pill">Incident / Problem / Change Mgmt</span>
+            <span class="skill-pill">Stakeholder & Escalation Mgmt</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skills-col-title">Diagnostics & Tools</div>
+          <div class="skill-list">
+            <span class="skill-pill">Wireshark</span>
+            <span class="skill-pill">IBTShark</span>
+            <span class="skill-pill">PuTTY</span>
+            <span class="skill-pill">WinSCP • FileZilla • FTP</span>
+            <span class="skill-pill">SIP Trace Analysis</span>
+            <span class="skill-pill">Linux (MSL)</span>
+            <span class="skill-pill">Virtual SIP Trunks & Lab Setup</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skills-col-title">Leadership & Gen-AI</div>
+          <div class="skill-list">
+            <span class="skill-pill">Team Leadership & Mentoring</span>
+            <span class="skill-pill">Service Performance Metrics</span>
+            <span class="skill-pill">Continuous Improvement</span>
+            <span class="skill-pill">Customer-Centric Mindset</span>
+            <span class="skill-pill">Gen-AI Workflows (LLMs)</span>
+            <span class="skill-pill">AI Agents for Service Ops</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications + Gen-AI -->
+    <section class="bottom-grid">
+      <div id="certs" class="card">
+        <div class="card-header">
+          <div class="card-title">Education & Certifications</div>
+          <div class="card-badge">Academic • Professional</div>
+        </div>
+        <div class="summary-text mb-2">
+          Grounded in German language education and complemented with ITIL, PRINCE2 and specialised VoIP & PBX certifications for enterprise service delivery.
+        </div>
+        <div class="mt-1">
+          <div class="cert-badge">
+            <i class="bi bi-mortarboard-fill"></i>
+            BA (Honours) – Bikaner University
+          </div>
+          <div class="cert-badge">
+            <i class="bi bi-translate"></i>
+            German Certification A1 – B2.2 (Max Mueller Bhavan)
+          </div>
+          <div class="cert-badge">
+            <i class="bi bi-diagram-3-fill"></i>
+            ITIL® Foundation & Intermediate (SO, ST)
+          </div>
+          <div class="cert-badge">
+            <i class="bi bi-award-fill"></i>
+            PRINCE2® Practitioner
+          </div>
+          <div class="cert-badge">
+            <i class="bi bi-telephone-fill"></i>
+            VoIP, SIP Tracing, PBX & Cloud Telephony Certifications
+          </div>
+          <div class="cert-badge">
+            <i class="bi bi-cpu-fill"></i>
+            Linux (MSL) & IP/SIP DECT Voice & Data
+          </div>
+          <div class="cert-badge">
+            <i class="bi bi-magic"></i>
+            AI & Gen-AI Automation (AI Workflows & Service Optimization)
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <div class="metric-row">
+            <span class="metric-label">German Onsite Exposure</span>
+            <span class="metric-value">Germany, Switzerland & Hungary</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Primary Customer Region</span>
+            <span class="metric-value">DACH Enterprise Accounts</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="genai" class="card">
+        <div class="card-header">
+          <div class="card-title">Gen-AI & Automation Focus</div>
+          <div class="card-badge">AI in Service Delivery</div>
+        </div>
+        <p class="summary-text">
+          Actively applying <span class="summary-highlight">Gen-AI, LLMs and AI Agents</span> to automate service workflows, accelerate RCA creation, and enhance knowledge base usage across PBX, VoIP and cloud telephony support environments.
+        </p>
+        <p class="summary-text">
+          Experience designing AI-assisted diagnostics for SIP traces, automating repetitive ticket responses, and enabling smarter escalation routing while keeping ITIL and SLA compliance at the centre of service operations.
+        </p>
+
+        <div class="mt-2">
+          <div class="metric-row">
+            <span class="metric-label">AI Application Areas</span>
+            <span class="metric-tag">RCA • KB • Automation</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Target Outcomes</span>
+            <span class="metric-value">Faster MTTR & Higher CSAT</span>
+          </div>
+        </div>
+
+        <div class="footer-note mt-2">
+          Ready to build AI-augmented service delivery frameworks for VoIP, PBX and cloud telephony organisations.
+        </div>
+      </div>
+    </section>
+  </main>
 </div>
 
-<div class="card">
-<h3>Sonim Technologies India Pvt Ltd, Bangalore Karnataka </h3>
-<small>German Technical Support Lead – BPO Operations-DACH region German Language Expert | 2013 – 2015</small>
-<p>
-Delivered SLA-driven, customer-centric support for German-speaking clients within BPO operations. Performed trend analysis to reduce recurring issues by 18%, managed high-priority escalations, and collaborated with cross-functional teams to improve resolution efficiency, service quality, and overall customer satisfaction. Delivered technical support for German, Swiss and Austrian customers,
-translated technical documentation, participated in device testing,
-and managed global BPO operations.
-</p>
-</div>
+<script>
+  // Sidebar active link on click
+  document.querySelectorAll('.nav-link-item').forEach(function (link) {
+    link.addEventListener('click', function () {
+      document.querySelectorAll('.nav-link-item').forEach(function (l) {
+        l.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
 
-<div class="card">
-<h3>Siemens (Atos), Genpact & TCS</h3>
-<small>German Language Expert & Process Transition-DACH region German Language Expert | 2009 – 2013</small>
-<p>
-Supported Siemens HiPath PBX and VoIP services for German-speaking clients, ensuring SLA-compliant incident resolution. Improved ticket turnaround through effective knowledge-base usage and monitoring. Delivered German-language reporting, change support, and client communication. Supported process transitions from Germany and Hungary, ensuring service quality, documentation accuracy, and operational consistency Supported Hipath3000 PBX systems operations, market research reporting,
-supported international process transitions (Europe- Frankfurt & Budapest) and European client engagements.
-</p>
-</div>
-
-</div>
-</section>
-
-<!-- EXPERTISE -->
-<section id="expertise">
-<h2>Expertise</h2>
-<div class="skills">
-  <div class="skill">Service Delivery & ITIL Operations</div>
-  <div class="skill">PBX, VOIP, SIP & Cloud Telephony</div>
-  <div class="skill">German Enterprise Support (B2.2)</div>
-  <div class="skill">Major Incident & Escalation Management</div>
-  <div class="skill">GenAI Automation & AI Service Agents</div>
-  <div class="skill">AI-Assisted RCA & Documentation</div>
-  <div class="skill">Process Transition & Stabilization</div>
-  <div class="skill">Wireshark & SIP Trace Analysis</div>
-</div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-<h2>Education</h2>
-<div class="card">
-BA Honours Degree – Bikaner University (2005–2008)<br>
-German Language Certifications – Max Mueller Bhavan (A1–B2.2)
-</div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-<h2>Professional Training & Certifications</h2>
-<div class="card">
-ITIL® Foundation & Intermediate (SO, ST)<br>
-PRINCE2® Foundation & Practitioner<br>
-Networking for VOIP, SIP & Cloud Telephony<br>
-MiVoice Office 400 Technical Training (Mitel)<br>
-Mitel Standard Linux, Wireshark, PUTTY, SIP Trace Analysis<br>
-GenAI & Automation Tools (ChatGPT, Gemini, Claude, Copilot)
-</div>
-</section>
-
-<!-- LANGUAGES -->
-<section id="languages">
-<h2>Languages</h2>
-<div class="card">
-German – Fluent (Certified B2.2)<br>
-English – Fluent<br>
-Hindi – Native
-</div>
-</section>
-
-<footer>
-© 2025 Sandeep Sain | Service Delivery & Technical Support Lead
-</footer>
-
+  // Top tabs active state
+  document.querySelectorAll('.top-nav-tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.top-nav-tab').forEach(function (t) {
+        t.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+</script>
 </body>
 </html>
-
-
